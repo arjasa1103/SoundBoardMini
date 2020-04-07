@@ -13,6 +13,7 @@
 		76120ED12437137100D15160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76120ECF2437137100D15160 /* Main.storyboard */; };
 		76120ED32437137300D15160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76120ED22437137300D15160 /* Assets.xcassets */; };
 		76120ED62437137300D15160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76120ED42437137300D15160 /* LaunchScreen.storyboard */; };
+		76CAED62243C6169005A3891 /* SoundModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED60243C6169005A3891 /* SoundModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		76120ED22437137300D15160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76120ED52437137300D15160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76120ED72437137300D15160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CAED61243C6169005A3891 /* SoundModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		76120EC82437137100D15160 /* SoundBoardMini */ = {
 			isa = PBXGroup;
 			children = (
+				76CAED60243C6169005A3891 /* SoundModel.xcdatamodeld */,
 				76120EC92437137100D15160 /* AppDelegate.swift */,
 				76120ECB2437137100D15160 /* SceneDelegate.swift */,
 				76120ECD2437137100D15160 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 				76120ECE2437137100D15160 /* ViewController.swift in Sources */,
 				76120ECA2437137100D15160 /* AppDelegate.swift in Sources */,
 				76120ECC2437137100D15160 /* SceneDelegate.swift in Sources */,
+				76CAED62243C6169005A3891 /* SoundModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +342,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		76CAED60243C6169005A3891 /* SoundModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				76CAED61243C6169005A3891 /* SoundModel.xcdatamodel */,
+			);
+			currentVersion = 76CAED61243C6169005A3891 /* SoundModel.xcdatamodel */;
+			path = SoundModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 76120EBE2437137100D15160 /* Project object */;
 }
