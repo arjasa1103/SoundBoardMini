@@ -14,6 +14,7 @@
 		76120ED32437137300D15160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76120ED22437137300D15160 /* Assets.xcassets */; };
 		76120ED62437137300D15160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76120ED42437137300D15160 /* LaunchScreen.storyboard */; };
 		76CAED62243C6169005A3891 /* SoundModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED60243C6169005A3891 /* SoundModel.xcdatamodeld */; };
+		C894DB11243F00110044DCEB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C894DB10243F00110044DCEB /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		76120ED52437137300D15160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76120ED72437137300D15160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76CAED61243C6169005A3891 /* SoundModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundModel.xcdatamodel; sourceTree = "<group>"; };
+		C894DB10243F00110044DCEB /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				76120ECB2437137100D15160 /* SceneDelegate.swift */,
 				76120ECD2437137100D15160 /* ViewController.swift */,
 				76120ECF2437137100D15160 /* Main.storyboard */,
+				C894DB10243F00110044DCEB /* RecordViewController.swift */,
 				76120ED22437137300D15160 /* Assets.xcassets */,
 				76120ED42437137300D15160 /* LaunchScreen.storyboard */,
 				76120ED72437137300D15160 /* Info.plist */,
@@ -143,6 +146,7 @@
 			files = (
 				76120ECE2437137100D15160 /* ViewController.swift in Sources */,
 				76120ECA2437137100D15160 /* AppDelegate.swift in Sources */,
+				C894DB11243F00110044DCEB /* RecordViewController.swift in Sources */,
 				76120ECC2437137100D15160 /* SceneDelegate.swift in Sources */,
 				76CAED62243C6169005A3891 /* SoundModel.xcdatamodeld in Sources */,
 			);
