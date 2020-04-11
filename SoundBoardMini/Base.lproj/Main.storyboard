@@ -78,7 +78,7 @@
                         <outlet property="myCollectionView" destination="jzc-SE-GyE" id="0v8-WM-OO0"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3SE-1b-jIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="942" y="138"/>
         </scene>
@@ -142,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="2396" y="138"/>
         </scene>
-        <!--Navigation Controller-->
+ <!--Navigation Controller-->
         <scene sceneID="zoh-T7-Dx9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZWU-fR-oko" sceneMemberID="viewController">
