@@ -21,8 +21,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     var audioPlayer = AVAudioPlayer()
     
     let items = ["Hi","HOI!","Samlekom","misi"]
-    let images:[UIImage] = [#imageLiteral(resourceName: "lessons-1") , #imageLiteral(resourceName: "lessons-4") , #imageLiteral(resourceName: "lessons-6") , #imageLiteral(resourceName: "lessons-5")]
-    
+    let images:[UIImage] = [#imageLiteral(resourceName: "lessons-1") , #imageLiteral(resourceName: "lessons-4") , #imageLiteral(resourceName: "lessons-6") , #imageLiteral(resourceName: "lessons-5")]    
     
     override func viewDidLoad() {
         super.viewDidLoad()
