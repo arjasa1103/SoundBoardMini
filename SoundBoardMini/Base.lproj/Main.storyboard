@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SE-1b-jIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+            <point key="canvasLocation" x="942" y="138"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="Y2n-Eb-OiO">
@@ -108,7 +108,6 @@
                                 </state>
                                 <connections>
                                     <action selector="save:" destination="lJ6-06-nel" eventType="touchUpInside" id="L7u-bc-4fJ"/>
-                                    <action selector="save:" destination="Ryt-AE-jjP" eventType="touchUpInside" id="mQ9-UW-YB4"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Szk-1z-eiI">
@@ -125,7 +124,6 @@
                                 <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="onpickimage:" destination="lJ6-06-nel" eventType="touchUpInside" id="n4E-EI-m1e"/>
-                                    <action selector="onpickimage:" destination="Ryt-AE-jjP" eventType="touchUpInside" id="nFz-NB-zeS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -142,12 +140,8 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6Y-0U-d6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2253.6231884057975" y="95.758928571428569"/>
+            <point key="canvasLocation" x="2396" y="138"/>
         </scene>
-    </scenes>
-    <resources>
-        <image name="Rectangle" width="263" height="263"/>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <!--Navigation Controller-->
         <scene sceneID="zoh-T7-Dx9">
             <objects>
@@ -209,11 +203,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzp-uL-1C9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924.63768115942037" y="141.96428571428569"/>
+            <point key="canvasLocation" x="1683" y="138"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle" width="263" height="263"/>
         <image name="icons8-record-80" width="80" height="80"/>
         <image name="icons8-stop-80" width="80" height="80"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
