@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0146C111243EC8880024026B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146C110243EC8880024026B /* CollectionViewCell.swift */; };
 		76120ECA2437137100D15160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76120EC92437137100D15160 /* AppDelegate.swift */; };
 		76120ECC2437137100D15160 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76120ECB2437137100D15160 /* SceneDelegate.swift */; };
 		76120ECE2437137100D15160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76120ECD2437137100D15160 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0146C110243EC8880024026B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		76120EC62437137100D15160 /* SoundBoardMini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBoardMini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76120EC92437137100D15160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76120ECB2437137100D15160 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				76120EC92437137100D15160 /* AppDelegate.swift */,
 				76120ECB2437137100D15160 /* SceneDelegate.swift */,
 				76120ECD2437137100D15160 /* ViewController.swift */,
+				0146C110243EC8880024026B /* CollectionViewCell.swift */,
 				76120ECF2437137100D15160 /* Main.storyboard */,
 				76120ED22437137300D15160 /* Assets.xcassets */,
 				76120ED42437137300D15160 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0146C111243EC8880024026B /* CollectionViewCell.swift in Sources */,
 				76120ECE2437137100D15160 /* ViewController.swift in Sources */,
 				76120ECA2437137100D15160 /* AppDelegate.swift in Sources */,
 				76120ECC2437137100D15160 /* SceneDelegate.swift in Sources */,
