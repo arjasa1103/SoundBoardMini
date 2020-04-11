@@ -78,76 +78,10 @@
                         <outlet property="myCollectionView" destination="jzc-SE-GyE" id="0v8-WM-OO0"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3SE-1b-jIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--Image View Controller-->
-        <scene sceneID="Y2n-Eb-OiO">
-            <objects>
-                <viewController id="lJ6-06-nel" customClass="ImageViewController" customModule="SoundBoardMini" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EuJ-hd-xI3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Insert Title" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YET-lS-uEX">
-                                <rect key="frame" x="65" y="467" width="285" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJg-8x-Vcf">
-                                <rect key="frame" x="105" y="698" width="204" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="save:" destination="lJ6-06-nel" eventType="touchUpInside" id="L7u-bc-4fJ"/>
-                                    <action selector="save:" destination="Ryt-AE-jjP" eventType="touchUpInside" id="mQ9-UW-YB4"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Szk-1z-eiI">
-                                <rect key="frame" x="69" y="150" width="276" height="261"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-8s-zRx">
-                                <rect key="frame" x="103" y="177" width="208" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxN-bY-usa">
-                                <rect key="frame" x="279" y="355" width="50" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="onpickimage:" destination="lJ6-06-nel" eventType="touchUpInside" id="n4E-EI-m1e"/>
-                                    <action selector="onpickimage:" destination="Ryt-AE-jjP" eventType="touchUpInside" id="nFz-NB-zeS"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="cVz-Pm-aVy"/>
-                    </view>
-                    <connections>
-                        <outlet property="img" destination="moJ-8s-zRx" id="zAI-fu-A3m"/>
-                        <outlet property="imgBox" destination="Szk-1z-eiI" id="6h4-Kc-hQ7"/>
-                        <outlet property="onClick" destination="nxN-bY-usa" id="kPI-Uy-xzw"/>
-                        <outlet property="savebutton" destination="EJg-8x-Vcf" id="mUC-xi-UlE"/>
-                        <outlet property="titleField" destination="YET-lS-uEX" id="w3x-KZ-iTE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c6Y-0U-d6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2253.6231884057975" y="95.758928571428569"/>
-        </scene>
-    </scenes>
-    <resources>
-        <image name="Rectangle" width="263" height="263"/>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <!--Navigation Controller-->
         <scene sceneID="zoh-T7-Dx9">
             <objects>
