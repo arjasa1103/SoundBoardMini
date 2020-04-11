@@ -11,22 +11,23 @@ import AVFoundation
 
 class RecordViewController: UIViewController, AVAudioRecorderDelegate {
 
+
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
     var recordingSession: AVAudioSession!
-       var audioRecorder: AVAudioRecorder!
-       var audioPlayer: AVAudioPlayer!
-       
-       var arrayIndex : [String] = []
-       var arrayTimer: [String] = []
-       var arrayString : [String] = []
-       
-       var index = 0
-       var counter = 0.0
-       var timer = Timer()
-       var urlToStringGlobal = ""
+     var audioRecorder: AVAudioRecorder!
+     var audioPlayer: AVAudioPlayer!
+
+     var arrayIndex : [String] = []
+     var arrayTimer: [String] = []
+     var arrayString : [String] = []
+
+     var index = 0
+     var counter = 0.0
+     var timer = Timer()
+     var urlToStringGlobal = ""
     
     
     override func viewDidLoad() {
@@ -168,6 +169,4 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
            
            timeLabel.text = "\(minuteString):\(secondString).\(centisecond)"
        }
-    
-
 }

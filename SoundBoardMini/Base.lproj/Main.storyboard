@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZWU-fR-oko">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
@@ -69,6 +70,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="mBm-It-eov" secondAttribute="top" constant="140" id="7zG-4k-dQI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mBm-It-eov" secondAttribute="trailing" id="JT6-XP-vCC"/>
+                            <constraint firstItem="mBm-It-eov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M57-0R-m94"/>
+                            <constraint firstItem="mBm-It-eov" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="glr-ZW-c5S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="My SoundBoard" largeTitleDisplayMode="always" id="ELj-WF-Fqn">

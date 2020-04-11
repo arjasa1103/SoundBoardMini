@@ -16,6 +16,11 @@
 		76120ED62437137300D15160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76120ED42437137300D15160 /* LaunchScreen.storyboard */; };
 		766E4B0C2441D0E400E4BADC /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E4B0B2441D0E400E4BADC /* ImageViewController.swift */; };
 		76CAED62243C6169005A3891 /* SoundModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED60243C6169005A3891 /* SoundModel.xcdatamodeld */; };
+		76CAED66243C7CE6005A3891 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED65243C7CE6005A3891 /* Record.swift */; };
+		76CAED68243D9E61005A3891 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED67243D9E61005A3891 /* DataStore.swift */; };
+		76CAED6A243DA005005A3891 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED69243DA005005A3891 /* RecordManager.swift */; };
+		76CAED73243E0CD0005A3891 /* Recording+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED71243E0CD0005A3891 /* Recording+CoreDataClass.swift */; };
+		76CAED74243E0CD0005A3891 /* Recording+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED72243E0CD0005A3891 /* Recording+CoreDataProperties.swift */; };
 		C894DB11243F00110044DCEB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C894DB10243F00110044DCEB /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +36,11 @@
 		76120ED72437137300D15160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		766E4B0B2441D0E400E4BADC /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		76CAED61243C6169005A3891 /* SoundModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundModel.xcdatamodel; sourceTree = "<group>"; };
+		76CAED65243C7CE6005A3891 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		76CAED67243D9E61005A3891 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		76CAED69243DA005005A3891 /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
+		76CAED71243E0CD0005A3891 /* Recording+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recording+CoreDataClass.swift"; sourceTree = "<group>"; };
+		76CAED72243E0CD0005A3891 /* Recording+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recording+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C894DB10243F00110044DCEB /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +58,10 @@
 		76120EBD2437137100D15160 = {
 			isa = PBXGroup;
 			children = (
+				76CAED71243E0CD0005A3891 /* Recording+CoreDataClass.swift */,
+				76CAED72243E0CD0005A3891 /* Recording+CoreDataProperties.swift */,
+				76CAED67243D9E61005A3891 /* DataStore.swift */,
+				76CAED65243C7CE6005A3891 /* Record.swift */,
 				76120EC82437137100D15160 /* SoundBoardMini */,
 				76120EC72437137100D15160 /* Products */,
 			);
@@ -65,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				76CAED60243C6169005A3891 /* SoundModel.xcdatamodeld */,
+				76CAED69243DA005005A3891 /* RecordManager.swift */,
 				76120EC92437137100D15160 /* AppDelegate.swift */,
 				76120ECB2437137100D15160 /* SceneDelegate.swift */,
 				76120ECD2437137100D15160 /* ViewController.swift */,
@@ -152,11 +167,16 @@
 			files = (
 				0146C111243EC8880024026B /* CollectionViewCell.swift in Sources */,
 				76120ECE2437137100D15160 /* ViewController.swift in Sources */,
+				76CAED73243E0CD0005A3891 /* Recording+CoreDataClass.swift in Sources */,
+				76CAED68243D9E61005A3891 /* DataStore.swift in Sources */,
 				76120ECA2437137100D15160 /* AppDelegate.swift in Sources */,
 				766E4B0C2441D0E400E4BADC /* ImageViewController.swift in Sources */,
 				C894DB11243F00110044DCEB /* RecordViewController.swift in Sources */,
 				76120ECC2437137100D15160 /* SceneDelegate.swift in Sources */,
 				76CAED62243C6169005A3891 /* SoundModel.xcdatamodeld in Sources */,
+				76CAED74243E0CD0005A3891 /* Recording+CoreDataProperties.swift in Sources */,
+				76CAED6A243DA005005A3891 /* RecordManager.swift in Sources */,
+				76CAED66243C7CE6005A3891 /* Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
