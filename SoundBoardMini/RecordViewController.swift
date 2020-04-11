@@ -21,10 +21,12 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
        
        var arrayIndex : [String] = []
        var arrayTimer: [String] = []
+       var arrayString : [String] = []
        
        var index = 0
        var counter = 0.0
        var timer = Timer()
+       var urlToStringGlobal = ""
     
     
     override func viewDidLoad() {
@@ -44,6 +46,10 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
                     if let arrayTime:[String] = UserDefaults.standard.object(forKey: "arrayOfTime") as? [String]{
                         arrayTimer = arrayTime
                     }
+        
+                if let arrayStrings:[String] = UserDefaults.standard.object(forKey: "arrayOfString") as? [String]{
+                    arrayString = arrayStrings
+                }
            
               
               recordingSession = AVAudioSession.sharedInstance()
@@ -87,7 +93,12 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         
          timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: (#selector(action)), userInfo: nil, repeats: true)
         
+        var urlToStringLocal = ""
+        urlToStringLocal = "\(fileName)"
+        urlToStringGlobal = urlToStringLocal
+        
         stopButton.isHidden = false
+        recordButton.isHidden = true
     }
     
     func getDocumentsDirectory() -> URL {
@@ -96,6 +107,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
           return documentDirectory
       }
     
+   
     
     // stop and saves the recording
     @IBAction func stopRecording(_ sender: UIButton) {
@@ -113,6 +125,12 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
             arrayTimer.append(time)
         }
         UserDefaults.standard.set(arrayTimer, forKey: "arrayOfTime")
+        
+        // save url to string record
+               arrayString.append(urlToStringGlobal)
+               UserDefaults.standard.set(arrayString, forKey: "arrayOfString")
+               
+               print(arrayString)
         
         recordButton.isHidden = false
         stopButton.isHidden = true
