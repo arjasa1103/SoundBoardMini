@@ -14,6 +14,7 @@
 		76120ED12437137100D15160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76120ECF2437137100D15160 /* Main.storyboard */; };
 		76120ED32437137300D15160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76120ED22437137300D15160 /* Assets.xcassets */; };
 		76120ED62437137300D15160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76120ED42437137300D15160 /* LaunchScreen.storyboard */; };
+		7638F2D324443BBF00FD2F8A /* New Recording.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7638F2D224443BBF00FD2F8A /* New Recording.m4a */; };
 		766E4B0C2441D0E400E4BADC /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E4B0B2441D0E400E4BADC /* ImageViewController.swift */; };
 		76CAED62243C6169005A3891 /* SoundModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED60243C6169005A3891 /* SoundModel.xcdatamodeld */; };
 		76CAED66243C7CE6005A3891 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CAED65243C7CE6005A3891 /* Record.swift */; };
@@ -34,6 +35,7 @@
 		76120ED22437137300D15160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76120ED52437137300D15160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76120ED72437137300D15160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7638F2D224443BBF00FD2F8A /* New Recording.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Recording.m4a"; sourceTree = "<group>"; };
 		766E4B0B2441D0E400E4BADC /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		76CAED61243C6169005A3891 /* SoundModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundModel.xcdatamodel; sourceTree = "<group>"; };
 		76CAED65243C7CE6005A3891 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		76120EC82437137100D15160 /* SoundBoardMini */ = {
 			isa = PBXGroup;
 			children = (
+				7638F2D124443A6C00FD2F8A /* initialAudios */,
 				76CAED60243C6169005A3891 /* SoundModel.xcdatamodeld */,
 				76CAED69243DA005005A3891 /* RecordManager.swift */,
 				76120EC92437137100D15160 /* AppDelegate.swift */,
@@ -92,6 +95,14 @@
 				766E4B0B2441D0E400E4BADC /* ImageViewController.swift */,
 			);
 			path = SoundBoardMini;
+			sourceTree = "<group>";
+		};
+		7638F2D124443A6C00FD2F8A /* initialAudios */ = {
+			isa = PBXGroup;
+			children = (
+				7638F2D224443BBF00FD2F8A /* New Recording.m4a */,
+			);
+			path = initialAudios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7638F2D324443BBF00FD2F8A /* New Recording.m4a in Resources */,
 				76120ED62437137300D15160 /* LaunchScreen.storyboard in Resources */,
 				76120ED32437137300D15160 /* Assets.xcassets in Resources */,
 				76120ED12437137100D15160 /* Main.storyboard in Resources */,

@@ -12,36 +12,36 @@ import CoreData
 public class Record: NSObject, NSCoding {
     
     var recordingName: String = ""
-    // var recordingImage: UIImage!
-    // var recordingAudioPath: String
+    var recordingImage: UIImage!
+    var recordingAudioPath: String
     
     struct Keys {
         static let recordingName = "recordingName"
-        // static let recordingImage = "recordingImage"
-        // static let recordingAudioPath = "recordingAudioPath"
+        static let recordingImage = "recordingImage"
+        static let recordingAudioPath = "recordingAudioPath"
     }
     
-    init(recordingName: String) {
+    init(recordingName: String, recordingImage: UIImage?, recordingAudioPath: String) {
         self.recordingName = recordingName
-        // self.recordingImage = recordingImage
-        // self.recordingAudioPath = recordingAudioPath
+        self.recordingImage = recordingImage
+        self.recordingAudioPath = recordingAudioPath
     }
     
     public func encode(with coder: NSCoder) {
         coder.encode(recordingName, forKey: Keys.recordingName)
-        // coder.encode(recordingImage, forKey: Keys.recordingImage)
-        // coder.encode(recordingAudioPath, forKey: Keys.recordingAudioPath)
+        coder.encode(recordingImage, forKey: Keys.recordingImage)
+        coder.encode(recordingAudioPath, forKey: Keys.recordingAudioPath)
     }
     
     public required convenience init?(coder: NSCoder) {
-        guard let dRecordingName = coder.decodeObject(forKey: Keys.recordingName) as? String else { return nil }
-            // , let dRecordingImage = coder.decodeObject(forKey: Keys.recordingImage) as? UIImage
-            // , let dRecordingAudioPath = coder.decodeObject(forKey: Keys.recordingAudioPath) as? String
+        guard let dRecordingName = coder.decodeObject(forKey: Keys.recordingName) as? String
+            , let dRecordingImage = coder.decodeObject(forKey: Keys.recordingImage) as? UIImage
+            , let dRecordingAudioPath = coder.decodeObject(forKey: Keys.recordingAudioPath) as? String else { return nil }
         
         self.init(
-            recordingName: dRecordingName
-            // recordingImage: dRecordingImage,
-            // recordingAudioPath: dRecordingAudioPath
+            recordingName: dRecordingName,
+            recordingImage: dRecordingImage,
+            recordingAudioPath: dRecordingAudioPath
         )
     }
     

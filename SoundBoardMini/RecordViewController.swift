@@ -15,6 +15,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     
     var recordingSession: AVAudioSession!
      var audioRecorder: AVAudioRecorder!
@@ -34,6 +35,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        saveButton.layer.cornerRadius = 16
         
         if let number:Int = UserDefaults.standard.object(forKey: "Index") as? Int{
                   index = number
@@ -65,15 +67,19 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
 
-    /*
+    @IBAction func toImage(_ sender: Any) {
+        performSegue(withIdentifier: "toImage", sender: self)
+    }
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let imageVC = segue.destination as? ImageViewController {
+            imageVC.audioPath = self.arrayString.last!
+        }
     }
-    */
     
     @IBAction func startRecording(_ sender: UIButton) {
         index += 1
@@ -139,7 +145,6 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
         
         timer.invalidate()
         counter = 0.0
-        
     }
     
     

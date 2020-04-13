@@ -17,14 +17,15 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate & U
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var imgBox: UIImageView!
     
-    
+    var audioPath: String = ""
+    let recordManager = RecordManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         savebutton.layer.cornerRadius = 16
         img.layer.cornerRadius = 35
         titleField.layer.cornerRadius = 18
-        
+        print(audioPath)
     }
     
     @IBAction func onpickimage(_ sender: Any) {
@@ -36,12 +37,23 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate & U
     }
     
     @IBAction func save(_ sender: Any) {
-        if titleField.text == "" {
+        var recordName = ""
+        let recordImage = img.image
+
+        if let title = titleField.text {
+            recordName = title
+        } else {
             let date = Date()
             let formatter = DateFormatter()
             formatter.dateFormat = "dd.MM.yyyy"
             print(formatter.string(from: date))
+            recordName = formatter.string(from: date)
         }
+        
+        let newRecord = Record(recordingName: recordName, recordingImage: recordImage, recordingAudioPath: audioPath)
+        recordManager.saveData(record: newRecord)
+        
+        performSegue(withIdentifier: "toHome", sender: self)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

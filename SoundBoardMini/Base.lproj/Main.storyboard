@@ -75,16 +75,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My SoundBoard" largeTitleDisplayMode="always" id="ELj-WF-Fqn">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rhO-ig-70K"/>
+                    <navigationItem key="navigationItem" title="My SoundBoard" id="ELj-WF-Fqn">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rhO-ig-70K">
+                            <connections>
+                                <action selector="addRecord:" destination="BYZ-38-t0r" id="U1b-c2-NRt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="myCollectionView" destination="jzc-SE-GyE" id="0v8-WM-OO0"/>
+                        <segue destination="8gH-be-H2T" kind="show" identifier="toRecord" id="fWc-5C-4oi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="138"/>
+            <point key="canvasLocation" x="928" y="138"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="Y2n-Eb-OiO">
@@ -134,23 +139,26 @@
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="cVz-Pm-aVy"/>
                     </view>
+                    <navigationItem key="navigationItem" id="z3a-2T-suN"/>
                     <connections>
                         <outlet property="img" destination="moJ-8s-zRx" id="zAI-fu-A3m"/>
                         <outlet property="imgBox" destination="Szk-1z-eiI" id="6h4-Kc-hQ7"/>
                         <outlet property="onClick" destination="nxN-bY-usa" id="kPI-Uy-xzw"/>
                         <outlet property="savebutton" destination="EJg-8x-Vcf" id="mUC-xi-UlE"/>
                         <outlet property="titleField" destination="YET-lS-uEX" id="w3x-KZ-iTE"/>
+                        <segue destination="ZWU-fR-oko" kind="showDetail" identifier="toHome" id="PjG-RZ-P9i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6Y-0U-d6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2396" y="138"/>
+            <point key="canvasLocation" x="2480" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zoh-T7-Dx9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZWU-fR-oko" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="f6I-dq-b9z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="DNd-5D-yyu">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -195,19 +203,36 @@
                                     <action selector="stopRecording:" destination="8gH-be-H2T" eventType="touchUpInside" id="Jge-2k-i3C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-Sa-LND">
+                                <rect key="frame" x="105" y="704" width="204" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="lJ6-06-nel" eventType="touchUpInside" id="EWL-dh-zZX"/>
+                                    <action selector="toImage:" destination="8gH-be-H2T" eventType="touchUpInside" id="Qox-lA-Wre"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="W74-49-1SP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ktL-Xx-bxn"/>
                     <connections>
                         <outlet property="recordButton" destination="McX-JV-vNm" id="le1-GG-Oqf"/>
+                        <outlet property="saveButton" destination="Qdh-Sa-LND" id="iT8-aj-oFu"/>
                         <outlet property="stopButton" destination="iNJ-B0-EQG" id="969-QX-Boc"/>
                         <outlet property="timeLabel" destination="kx6-cL-sGq" id="7t2-qw-GxB"/>
+                        <segue destination="lJ6-06-nel" kind="show" identifier="toImage" id="jcz-F5-X84"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzp-uL-1C9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="138"/>
+            <point key="canvasLocation" x="1697" y="138"/>
         </scene>
     </scenes>
     <resources>
