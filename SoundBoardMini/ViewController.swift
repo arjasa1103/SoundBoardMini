@@ -29,6 +29,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 //        gettingSongName()
     }
     
+    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        let item = items[indexPath.row]
+        
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { suggestedActions in
+            
+            let share = UIAction(title: "Share", image: UIImage(systemName: "square.and.arrow.up")) {
+                action in
+            }
+            let delete = UIAction(title: "Delete", image: UIImage(systemName: "trash"),attributes: .destructive) {
+                action in
+            }
+            return UIMenu(title: "",children: [share, delete])
+        }
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

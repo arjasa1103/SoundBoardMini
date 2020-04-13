@@ -76,7 +76,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="My SoundBoard" largeTitleDisplayMode="always" id="ELj-WF-Fqn">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rhO-ig-70K"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rhO-ig-70K">
+                            <connections>
+                                <segue destination="8gH-be-H2T" kind="show" id="lJt-j3-yr9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="myCollectionView" destination="jzc-SE-GyE" id="0v8-WM-OO0"/>
@@ -199,6 +203,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="W74-49-1SP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="V3f-wi-lM9"/>
                     <connections>
                         <outlet property="recordButton" destination="McX-JV-vNm" id="le1-GG-Oqf"/>
                         <outlet property="stopButton" destination="iNJ-B0-EQG" id="969-QX-Boc"/>
